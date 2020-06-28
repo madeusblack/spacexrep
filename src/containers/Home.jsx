@@ -14,8 +14,8 @@ const Home = () => {
     return (
       <>
         <CardContainer>
-          <LaunchCard key={lastest.id} {...lastest} />
-          <LaunchCard key={next.id} {...next} />
+          <LaunchCard key={lastest.id} {...lastest} title='Lastest Launch'/>
+          <LaunchCard key={next.id} {...next} title='Next Launch'/>
         </CardContainer>
       </>
     );
