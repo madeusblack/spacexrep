@@ -1,0 +1,15 @@
+.pagesContainer {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+.pagesContainer h6{
+    border:1px solid white;
+    padding: 1em;
+    border-radius: 22%;
+    transition: 450ms;
+    cursor: pointer;
+}
+.pagesContainer h6:hover{
+    background-color: gray;   
+}

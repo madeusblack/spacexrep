@@ -1,0 +1,10 @@
+.itemsPerPage{
+    border:1px solid white;
+    width: 9em;
+    padding: 1em;
+    border-radius: 5%;
+    cursor: pointer;
+}
+.itemsPerPage:hover{
+    background-color: darkgray;
+}
