@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable no-else-return */
 import React from 'react';
 import useInitialState from '../Hooks/useInitialState';
@@ -14,8 +15,8 @@ const Home = () => {
     return (
       <>
         <CardContainer>
-          <LaunchCard key={lastest.id} {...lastest} title='Lastest Launch'/>
-          <LaunchCard key={next.id} {...next} title='Next Launch'/>
+          <LaunchCard key={lastest.id} {...lastest} title='Lastest Launch' />
+          <LaunchCard key={next.id} {...next} title='Next Launch' />
         </CardContainer>
       </>
     );

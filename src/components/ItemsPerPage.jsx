@@ -7,28 +7,28 @@ import { setItems, setPage } from '../actions/index';
 import '../assets/styles/components/ItemsPerPage.scss';
 
 const ItemsPerPage = (props) => {
-  const {numberOfItems} = props
+  const { numberOfItems } = props;
   let newNumberOfItems;
   const handleSetItems = () => {
     if (props.numberOfItems === 20) {
-      newNumberOfItems=props.numberOfItems - 10;
+      newNumberOfItems = props.numberOfItems - 10;
     } else {
-      newNumberOfItems=props.numberOfItems + 10;
+      newNumberOfItems = props.numberOfItems + 10;
     }
-    props.setItems(newNumberOfItems)
-    props.setPage(1)
-  }
+    props.setItems(newNumberOfItems);
+    props.setPage(1);
+  };
 
   return (
-      <h6 className='itemsPerPage' onClick={handleSetItems}>
-        Items per Page: {numberOfItems}
-      </h6>
+    <h6 className='itemsPerPage' onClick={handleSetItems}>
+      Items per Page: {numberOfItems}
+    </h6>
   );
 };
 const mapDispathToProps = {
-  setItems,setPage
+  setItems,
+  setPage,
+};
 
-}
-
-export default connect(null,mapDispathToProps)(ItemsPerPage);
+export default connect(null, mapDispathToProps)(ItemsPerPage);
 
