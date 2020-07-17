@@ -6,16 +6,75 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border-radius: 33px;
+  border-radius: 22px;
   padding: 1em;
   background-color: rgba(255, 255, 255, 0.1);
 }
 .launchCard:hover{
   box-shadow: none;
+}
+.missionPatch{
+  width: 5em;
+  height: 5em;
+  position: absolute;
+  padding: 1em;
+}
+.flickr{
+  width: 60%;
+  height: 20em;
+  border-radius: 20%;
+
 
 }
-.launchCard img{
-  width: 10em;
-  height: 10em;
-  padding: 1em;
+.name_patch{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  
+  
+}
+.groupInfo{
+  color:white;
+  transition:450ms;
+  text-decoration: none;
+}
+.groupInfo:hover{
+  color:darkgrey;
+  text-decoration: underline;
+}
+.missionName{
+  text-align: center;
+}
+.aboutThisMission{
+  width: 80%;
+  max-width: 60ch;
+  line-height: 1.4em;
+}
+.launchSite, .groupInfo{
+  text-align: center;
+}
+@media screen and (max-width: 800px)  {
+  .missionPatch{
+    position: relative;
+    margin: auto;
+  }
+  .missionName{
+    position: relative;
+  }
+
+  .launchCard{
+    box-shadow: none;
+
+    padding: 1em;
+
+  }
+  .flickr{
+    width: 100%;
+  }
+  .youtubeIframe{
+    width: 100% ;
+  }
+  .groupInfo{
+    text-decoration: underline;
+  }
 }
