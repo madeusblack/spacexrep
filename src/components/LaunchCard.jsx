@@ -16,10 +16,10 @@ const LaunchCard = ({ title, mission_name, launch_date_utc, links, launch_site, 
         <h2 className='cardTitle'>{title}</h2>
       )}
       <div className='name_patch'>
+        <h4 className='missionName'>{mission_name}</h4>
         {links.mission_patch ?
           <img className='missionPatch' src={links.mission_patch} alt='mission patch' /> :
           <img className='missionPatch' src={paceholder} alt='mission patch' style={{ borderRadius: '52%' }} />}
-        <h4 className='missionName'>{mission_name}</h4>
 
       </div>
       {(links.flickr_images.length > 0) &&
