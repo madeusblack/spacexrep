@@ -18,12 +18,12 @@ const LaunchCard = ({ title, mission_name, launch_date_utc, links, launch_site, 
       <div className='name_patch'>
         <h4 className='missionName'>{mission_name}</h4>
         {links.mission_patch ?
-          <img className='missionPatch' src={links.mission_patch} alt='mission patch' /> :
+          <img className='missionPatch' src={links.mission_patch} alt='mission patch' loading='lazy' /> :
           <img className='missionPatch' src={paceholder} alt='mission patch' style={{ borderRadius: '52%' }} />}
 
       </div>
       {(links.flickr_images.length > 0) &&
-        <img className='flickr' src={links.flickr_images[0]} alt='' />}
+        <img className='flickr' src={links.flickr_images[0]} alt='' loading='lazy' />}
       <h5 className='missionDate'>{launchDate}</h5>
       <h5 className='launchSite'>{launchPlace}</h5>
 
