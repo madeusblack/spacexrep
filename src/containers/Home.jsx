@@ -13,12 +13,10 @@ const Home = () => {
 
   if (lastest.mission_name && next.mission_name) {
     return (
-      <>
-        <CardContainer>
-          <LaunchCard key={lastest.id} {...lastest} title='Lastest Launch' />
-          <LaunchCard key={next.id} {...next} title='Next Launch' />
-        </CardContainer>
-      </>
+      <CardContainer>
+        <LaunchCard key={lastest.id} {...lastest} title='Lastest Launch' />
+        <LaunchCard key={next.id} {...next} title='Next Launch' />
+      </CardContainer>
     );
   } else {
     return (
